@@ -1,0 +1,210 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  box-sizing: border-box;
+}
+
+span{
+ 	 display:block;
+   margin:5px auto;
+   /* text-align: center; */
+ 	 font-size: 0.5em;
+}
+h2{
+  text-align: center;
+  padding-top: 80px;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration:none;
+  display: block;
+}
+img{
+  display: block;
+}
+
+/* PC版のCSS */
+@media only screen and (min-width:768px){
+
+a{
+  display:block;
+}
+
+#header-left{
+  float: left;
+}
+
+#header-right{
+  float: right;
+}
+
+nav{
+  clear: both;
+}
+
+/* button{
+  clear: both;
+} */
+
+#navPC{
+  display: flex;
+}
+
+#navPC ul{
+  display: flex;
+}
+
+#navSP{
+  display: none;
+}
+
+#hotTopic{
+  display: flex;
+  width: 733px;
+  margin: 30px auto;
+}
+
+#hotTopic li{
+  border-left: solid 3px #F0F0F0;
+  margin-top: 20px;
+  height: 150px;
+}
+
+#hotTopic li:nth-child(1){
+  border-left: none;
+}
+
+#hotTopic li div{
+  margin: 0 150px;
+}
+
+#hotTopic li p{
+  text-align: center;
+}
+
+#hotTopic li div img{
+  padding-bottom: 20px;
+}
+
+
+#mainV-title{
+  background-image: url(images/main.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  height: 438px;
+}
+
+#mainV-title ul{
+ display: flex;
+ justify-content: center;
+}
+
+#mainV-title ul li{
+  background-color: #fff;
+  width: 300px;
+  height: 200px;
+  margin: 0 35px;
+  text-align: center;
+}
+
+#mainV-title ul li h3{
+  margin: 20px 0;
+}
+
+#mainV-title ul li p{
+  margin: 20px auto;
+  width: 80%;
+  font-weight: bold;
+}
+
+
+#mainV-title ul li a{
+  margin: 20px auto;
+  color: #F0F0F0;
+  width: 30%;
+  border: solid 1px #F0F0F0;
+}
+
+
+#news{
+  width: 733px;
+  margin: 0 auto;
+}
+
+#form{
+  background-color: gray;
+  width: 900px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+form{
+  display: block;
+  width: 560px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+table{
+  text-align: left;
+  width: 600px;
+  margin: 0 auto;
+}
+
+table tr{
+  line-height:50px;
+}
+
+table tr:nth-child(7){
+  text-align: center;
+}
+
+#checkButtonPosition{
+  width: 100%;
+}
+
+
+input.typing{
+  width: 330px;
+}
+
+footer{
+  background-color: black;
+  width: 100%;
+  height: 350px;
+  color: white;
+}
+
+footer div{
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 80%;
+}
+
+footer p{
+  width: 40%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+
+
+
+
+
+/* スライドショー */
+  .bg-slider{
+    padding:180px 0px;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+}
