@@ -29,31 +29,31 @@
       <ul>
         <li class="menuPC"><a href="#">menu01</a>
           <ul>
-            <li><a href="#">ドロップダウンメニュー</a></li>
-            <li><a href="#">ドロップダウンメニュー</a></li>
-            <li><a href="#">ドロップダウンメニュー</a></li>
+            <li class="dropDown"><a href="#">ドロップダウンメニュー</a></li>
+            <li class="dropDown"><a href="#">ドロップダウンメニュー</a></li>
+            <li class="dropDown"><a href="#">ドロップダウンメニュー</a></li>
           </ul>
         </li>
         <li class="menuPC"><a href="#">menu02</a>
           <ul>
-            <li><a href="#">ドロップダウンメニュー</a></li>
-            <li><a href="#">ドロップダウンメニュー</a></li>
-            <li><a href="#">ドロップダウンメニュー</a></li>
+            <li class="dropDown"><a href="#">ドロップダウンメニュー</a></li>
+            <li class="dropDown"><a href="#">ドロップダウンメニュー</a></li>
+            <li class="dropDown"><a href="#">ドロップダウンメニュー</a></li>
           </ul>
         </li>
         <li class="menuPC"><a href="#">menu03</a>
           <div>
             <ul>
-              <li><a href="#">スクールの特長トップ</a></li>
-              <li><a href="#">はじめての方へ</a></li>
-              <li><a href="#">現場のノウハウ</a></li>
-              <li><a href="#">最新で正確なスキル</a></li>
-              <li><a href="#">アカデミーネットワーク</a></li>
+              <li class="dropDown"><a href="#">スクールの特長トップ</a></li>
+              <li class="dropDown"><a href="#">はじめての方へ</a></li>
+              <li class="dropDown"><a href="#">現場のノウハウ</a></li>
+              <li class="dropDown"><a href="#">最新で正確なスキル</a></li>
+              <li class="dropDown"><a href="#">アカデミーネットワーク</a></li>
             </ul>
           </div>
         </li>
-        <li><a href="#">menu04</a></li>
-        <li><a href="#">menu05</a></li>
+        <li class="menuPC"><a href="#">menu04</a></li>
+        <li class="menuPC"><a href="#">menu05</a></li>
       </ul>
     </nav>
 
@@ -266,8 +266,13 @@
       });
     });
 
-    $(function()({
-      $("#menuPC").on("mouseover", )
+    $(function(){
+      $(".menuPC").mouseover(function(){
+        $(".dropDown").addClass("mouseOver");
+      })
+      $(".menuPC").mouseout(function(){
+        $("dropDown").removeClass("mouseOver");
+      })
     })
 
 
