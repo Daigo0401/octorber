@@ -53,6 +53,8 @@ nav{
 
 #navPC{
   display: flex;
+  width: 80%;
+  margin: 0 auto;
 }
 
 #navPC ul{
@@ -200,8 +202,26 @@ footer p{
   display: none;
 }
 
+#navPC.mouceOver{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menuPC a{
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
 .dropDown.mouseOver{
   display: block;
+}
+
+.dropDown.mouseOver a{
+  display: block;
+  width: 100px;
+  margin: 0 auto;
 }
 
 .menuPC{
@@ -211,6 +231,11 @@ footer p{
 
 .menuPC a{
   color: black;
+}
+
+.dropDown.mouseOver a{
+  display: block;
+  width: 70px;
 }
 
 
